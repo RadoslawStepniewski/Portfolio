@@ -1,0 +1,47 @@
+/* font-family: 'Saira',sans-serif;
+font-family: 'Saira Condensed',sans-serif;
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+/**********Header**********/
+
+header{
+    height: 100vh;
+    position: relative;
+    background-color: #29a6dc;
+}
+
+header img{
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+
+}
+
+header .welcome{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+
+
+}
+
+header p {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
