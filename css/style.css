@@ -2,59 +2,62 @@
 font-family: 'Saira Condensed',sans-serif;
  */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 10px;
 }
 
 /**********Header**********/
 
-header{
+header {
     height: 100vh;
     position: relative;
     background-color: #29a6dc;
+    overflow: hidden;
 }
 
-header img{
+header>* {
     position: absolute;
+}
+
+header img {
     height: 50%;
     bottom: 0;
     right: 0;
-
 }
 
-header .welcome{
+header .welcome {
     position: absolute;
     top: 10%;
     left: 5%;
     right: 5%;
-      color: #ffffff;
-      font-family: 'Saira Condensed',sans-serif;
-      font-weight: bold;
-      text-transform: uppercase;
-      text-align: center;
-
-
+    color: #ffffff;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 header p {
     font-size: 4rem;
 }
-header h1{
-     font-size: 2rem;
-}
-header h2{
-     font-weight: normal;
-     font-size: 2rem;
+
+header h1 {
+    font-size: 2rem;
 }
 
-header button{
-    font-family: 'Saira',sans-serif;
+header h2 {
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+header button {
+    font-family: 'Saira', sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
     color: #ffffff;
@@ -66,27 +69,114 @@ header button{
     margin-top: 3rem;
 }
 
-@media (orientation: landscape){
+@media (orientation: portrait) and (min-width: 360px){
+    header h1{
+        font-size: 2.4rem;
+    }
+    header h2{
+        font-size: 2.4rem;
+    }
+    header button{
+        font-size: 1.6rem;
+        line-height: 4rem;
+        margin: 2.4rem;
+    }
+    header img{
+        right: -10%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    header h1 {
+        font-size: 2.6rem;
+    }
+    header h2 {
+        font-size: 2.6rem;
+    }
+    header button {
+        font-size: 2rem;
+        line-height: 5rem;
+        margin-top: 4rem;
+    }
+    header img{
+        right: -10%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    header p{
+        font-size: 5.6rem;
+        
+    }
+    header h1 {
+        font-size: 3.4rem;
+    }
+    header h2 {
+        font-size: 3.4rem;
+    }
+    header button {
+        font-size: 2.8rem;
+        line-height: 5rem;
+        margin-top: 7rem;
+    }
+    header img {
+        right: 5%;
+    }
+}
+
+
+@media (orientation: landscape) and (min-width: 533px) {
     header img {
         position: absolute;
         height: 80%;
         bottom: 0;
-        right: -80;
+        right: -5%;
     }
-
     header .welcome {
         position: absolute;
-        top: 20%;
-        left: -45%;
-        right: 5%;
-        color: #ffffff;
-        font-family: 'Saira Condensed', sans-serif;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
+        top: 15%;
+        left: 7%;
+        right: 48%;
     }
+    header button {
+        margin-top: 4rem;
+    }
+}
 
+@media (orientation: landscape) and (min-width: 640px){
+    header h1{
+        font-size: 2.4remm;
+    }
+    header h2{
+        font-size: 2.4rem;
+    }
+    header button{
+        font-size: 1.6rem;
+        line-height: 4rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    header .welcome{
+        left: 5%;
+    }
     header p {
-        margin-bottom: 2rem;
+        font-size: 5.6rem;
+    }
+    header h1 {
+        margin-top: 4rem;
+        font-size: 3.4rem;
+    }
+    header h2 {
+        font-size: 3.4rem;
+    }
+    header button {
+        margin-top: 8rem;
+        font-size: 2.8rem;
+        line-height: 7rem;
+    }
+    header img{
+        right: -22%;
+        height: 95%;
     }
 }
