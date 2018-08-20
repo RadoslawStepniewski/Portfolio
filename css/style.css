@@ -12,6 +12,12 @@ html {
     font-size: 10px;
 }
 
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
 /**********Header**********/
 
 header {
@@ -246,7 +252,8 @@ header button {
 /* Sekcja 1 nasze cechy */
 
 .features{
-    margin-top: 5rem;
+    max-width: 1600px;
+    margin: 5rem auto 0;
     padding: 5%;
     text-align: center
 
@@ -273,4 +280,72 @@ header button {
 .features img{
     width: 100%;
     margin: 0.5rem 0;
+    max-width: 375px;
+}
+
+@media (min-width: 360px){
+    .features h1{
+        font-size: 2.8rem;;
+    }
+    .features h2{
+        font-size: 2.4rem;
+    }
+    .features p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .features h1 {
+        font-size: 3.4rem;
+        ;
+    }
+    .features h2 {
+        font-size: 2.8rem;
+    }
+    .features p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .features {
+        margin-top: 5rem;
+        padding: 5% 2%;
+        text-align: center
+    }
+    .feature{
+        float: left;
+        width: 33%;
+        padding: 3rem;
+    }
+    .features h1 {
+        font-size: 3.4rem;
+        ;
+    }
+    .features h2 {
+        font-size: 2.2rem;
+    }
+    .features p {
+        font-size: 1.6rem;
+        line-height: 120%;
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .feature {
+        padding: 2rem 4rem;
+    }
+    .features h1 {
+        font-size: 6rem;
+        ;
+    }
+    .features h2 {
+        font-size: 3.2rem;
+    }
+    .features p {
+        font-size: 2.1rem;
+        line-height: 140%;
+    }
 }
