@@ -466,3 +466,81 @@ header button {
         margin-bottom: 4rem;
     }
 }
+
+/********** Slogan***********/
+
+.slogan {
+    text-align: center;
+    background-image: url(../images/motto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.slogan h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+
+.slogan p {
+    font-family: 'Saira', sans-serif;
+    font-size: 1.8rem;
+}
+
+.slogan p.author {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.slogan .bg {
+    padding: 3rem 1rem;
+    background-color: rgba(0, 63, 114, 05.);
+}
+
+@media (orientation: landscape) {
+    .slogan p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .slogan .bg {
+        padding: 5.0rem 1.0rem;
+    }
+    .slogan h1 {
+        font-size: 4.8rem;
+        margin-bottom: 3.5rem;
+    }
+    .slogan p {
+        font-size: 2.6rem;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .slogan p.author {
+        margin-top: 4rem;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .slogan .bg {
+        padding: 8rem 1rem;
+    }
+    .slogan h1 {
+        font-size: 6rem;
+        margin-bottom: 5.5rem;
+    }
+    .slogan p {
+        font-size: 4rem;
+        width: 50%;
+    }
+    .slogan p.author {
+        margin-top: 4rem;
+        font-size: 2.6rem;
+    }
+}
